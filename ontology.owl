@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivationCond-1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivationCond-2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivationCond-3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivationCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnonymizedData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnonymizedMessage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Birthday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cancelled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Happening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obligation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensitive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserWithPrivateStat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserWithSensitiveStat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Violated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#anonymize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBirthday"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCaption"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmployer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstname"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLastname"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLink"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMessage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUpdatedTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUsername"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#like"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makeComment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makePost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makeStatement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEntities"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isPopular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ID_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ID_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ID_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensitive_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensitive_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sensitive_3"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ActivationCond-1"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PersonalName"/>
+            <DataHasValue>
+                <DataProperty IRI="#isPopular"/>
+                <Literal datatypeIRI="&xsd;boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivationCond-2"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Message"/>
+            <DataHasValue>
+                <DataProperty IRI="#isPopular"/>
+                <Literal datatypeIRI="&xsd;boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ActivationCond-3"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Statement"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasMessage"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isRelatedTo"/>
+                    <Class IRI="#Sensitive"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PrivateUser"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPrivateProperty"/>
+                <Class IRI="#ActivationCond-1"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UserWithPrivateStat"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#makeStatement"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasMessage"/>
+                    <Class IRI="#ActivationCond-2"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UserWithSensitiveStat"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#makeStatement"/>
+                <Class IRI="#ActivationCond-3"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Abstract"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activated"/>
+        <Class IRI="#Obligation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivationCond-1"/>
+        <Class IRI="#ActivationCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivationCond-2"/>
+        <Class IRI="#ActivationCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivationCond-3"/>
+        <Class IRI="#ActivationCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivationCondition"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anonym"/>
+        <Class IRI="#AnonymizedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnonymizedData"/>
+        <Class IRI="#LexicalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnonymizedMessage"/>
+        <Class IRI="#AnonymizedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#PersonalName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cancelled"/>
+        <Class IRI="#Obligation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comment"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#Happening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Happening"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ID"/>
+        <Class IRI="#PersonalName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Link"/>
+        <Class IRI="#PersonalName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Message"/>
+        <Class IRI="#PersonalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name"/>
+        <Class IRI="#PersonalName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalData"/>
+        <Class IRI="#LexicalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalName"/>
+        <Class IRI="#PersonalData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Post"/>
+        <Class IRI="#Statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensitive"/>
+        <Class IRI="#Topic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statement"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Happening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topic"/>
+        <Class IRI="#Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserWithPrivateStat"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserWithSensitiveStat"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violated"/>
+        <Class IRI="#Obligation"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ID"/>
+        <NamedIndividual IRI="#ID_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ID"/>
+        <NamedIndividual IRI="#ID_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ID"/>
+        <NamedIndividual IRI="#ID_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensitive"/>
+        <NamedIndividual IRI="#Sensitive_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensitive"/>
+        <NamedIndividual IRI="#Sensitive_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sensitive"/>
+        <NamedIndividual IRI="#Sensitive_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Sensitive_1"/>
+        <NamedIndividual IRI="#ID_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Sensitive_2"/>
+        <NamedIndividual IRI="#ID_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Sensitive_3"/>
+        <NamedIndividual IRI="#ID_3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#ID_1"/>
+        <Literal datatypeIRI="&xsd;string">Ethnicity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isPopular"/>
+        <NamedIndividual IRI="#ID_1"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#ID_2"/>
+        <Literal datatypeIRI="&xsd;string">Politics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isPopular"/>
+        <NamedIndividual IRI="#ID_2"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#ID_3"/>
+        <Literal datatypeIRI="&xsd;string">Religion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isPopular"/>
+        <NamedIndividual IRI="#ID_3"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBirthday"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCaption"/>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFirstname"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasID"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLastname"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLink"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMessage"/>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasName"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+        <ObjectProperty IRI="#hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasUsername"/>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makeComment"/>
+        <ObjectProperty IRI="#makeStatement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makePost"/>
+        <ObjectProperty IRI="#makeStatement"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#anonymize"/>
+        <Class IRI="#PersonalData"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBirthday"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCaption"/>
+        <Class IRI="#Post"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComment"/>
+        <Class IRI="#Post"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployer"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFirstname"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasID"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLastname"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLink"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+        <Class IRI="#Statement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUsername"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelatedTo"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#like"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makeComment"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makePost"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#anonymize"/>
+        <Class IRI="#AnonymizedData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBirthday"/>
+        <Class IRI="#Birthday"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCaption"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComment"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmployer"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFirstname"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasID"/>
+        <Class IRI="#ID"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLastname"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLink"/>
+        <Class IRI="#Link"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasName"/>
+        <Class IRI="#Name"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+        <Class IRI="#Anonym"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrivateProperty"/>
+        <Class IRI="#PersonalName"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensitiveContent"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUsername"/>
+        <Class IRI="#ID"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRelatedTo"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#like"/>
+        <Class IRI="#Statement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makeComment"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makePost"/>
+        <Class IRI="#Post"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEntities"/>
+        <Class IRI="#Message"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasText"/>
+        <Class IRI="#LexicalResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isPopular"/>
+        <Class IRI="#PersonalName"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

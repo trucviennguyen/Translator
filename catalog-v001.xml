@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="output1/KB0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="input/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="output10/KB0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input19/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input18/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input17/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input16/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input15/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input14/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input13/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input12/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input11/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1426201183951" name="shadowed:http://www.semanticweb.org/tvnguyen/ontologies/WebDataNet" uri="parts-0/input20/ontology.owl"/>
+    </group>
+</catalog>
