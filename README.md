@@ -1,6 +1,8 @@
 # Translator
 
-In this project, the system receives as input an ontology (ontology.owl) and a folder which contains posts/statuses of Facebook users. It will add information of those Facebook users (user public information, posts/statuses) into the ontology.
+This is the next step of DataCollector.
+
+In this project, the system receives as input an ontology (ontology.owl) and a folder which contains posts/statuses of Facebook users (the output of DataCollector). It will add information of those Facebook users (user public information, posts/statuses) into the ontology.
 
 The system is written in Java and uses OWL API, HermiT as reasoner.
 
